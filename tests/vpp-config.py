@@ -50,6 +50,8 @@ def getVhostPortMac(port):
 
 def configVhostPortRoute(port, containerIP, containerMAC):
 	'''Setup Routing rules for the Vhost User port's client'''
+	return None
+	
 	cmd = 'vppctl set int unnum {} use loop0'.format(port)
 	execCommand(cmd)
 
